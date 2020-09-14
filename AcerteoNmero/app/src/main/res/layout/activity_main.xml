@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <ImageView
+            android:id="@+id/ivMainIcon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"
+            android:gravity="center"
+            android:src="@drawable/baseline_help_outline"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight=".50"
+            android:gravity="center"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nova_dica_aparecer"
+                android:layout_marginBottom="20dp"
+            />
+            <TextView
+                android:id="@+id/tvMainDica1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dica 1:"
+            />
+            <TextView
+                android:id="@+id/tvMainDica2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dica 2:"
+            />
+            <TextView
+                android:id="@+id/tvMainDica3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dica 3:"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMainChute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    >
+        <EditText
+            android:id="@+id/etMainChute"
+            android:text=""
+            android:autofillHints="Insira o número aqui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/btnMainChute"
+            android:text="Chutar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMainNovo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerar Número"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+    />
+
+</RelativeLayout>

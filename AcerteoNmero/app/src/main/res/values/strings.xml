@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Acerte o Número</string>
+    <string name="nova_dica_aparecer">Você tem 3 chances de acertar qual número, cada vez que você errar uma nova dica aparecerá</string>
+</resources>
